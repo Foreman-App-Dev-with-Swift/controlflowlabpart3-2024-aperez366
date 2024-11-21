@@ -151,7 +151,12 @@ let isSunny = true
 var temp = 90
 let isNiceWeather = (!isRaining && isSunny && temp >= 82)
 
-
+if (isNiceWeather) {
+    print("I'm going for a walk!")
+}
+else {
+    print("I'm not going for a walk")
+}
 //Once you complete the coding, test and run the code with various boolean conditions in the variables to see if all the coding works. Change true into false, use different degrees, etc. Then continue.
 
 print("\n")
@@ -162,8 +167,20 @@ print("***PROBLEM 3.4 : FINISHING THE FITNESS APP")
  Create constants isInTarget, isBelowTarget, and isAboveTarget that equal expressions that evaluate to whether or not currentHR is between the lower and upper bounds, below the lower bound, and above the upper bound, respectively. Then write an if-else-if statement that will print "You're right on track!" if the user is inside the target zone, "You're doing great, but try to push it a bit!" if the user is below the target zone, and "You're on fire! Slow it down just a bit." if the user is above the target zone.
  //HINT: First declare a variable currentHR with a value of 90 and targetHR with a value of 100. Then declare your three constants. Finally, create your If- else if - else statement.
  */
+var currentHR = 90
+var targetHR = 100
+let isInTarget = currentHR == targetHR
+let isBelowTarget = currentHR < targetHR
+let isAboveTarget = currentHR > targetHR
 
-
-
+if (isInTarget) {
+    print("You're right on track!")
+}
+else if (isBelowTarget) {
+    print("You're doing great, but try to push a bit!")
+}
+else {
+    print("You're on fire! Slow it down just a bit.")
+}
 //Once you complete the coding, test and run the code with various values for currentHR to see if all the coding works. If all the coding works, check your work and see if it shows in the console. Then you are done! Push it up to GitHub.
 print("\n")
